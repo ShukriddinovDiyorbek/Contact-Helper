@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".MessageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="130dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow"
+                app:tint="@color/black" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:text="Xabar yuborish"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="4dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:text="Sanjar Suvonov"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="+998 97 007 96 20"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <EditText
+        android:hint="Xabar matni"
+        android:textSize="14sp"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="366dp"/>
+
+    <Button
+        android:text="Xabar yuborish"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        app:backgroundTint="@null"
+        android:padding="5dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+
+</LinearLayout>
